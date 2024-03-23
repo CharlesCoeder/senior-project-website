@@ -2,22 +2,22 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import HeroText from "./hero-text";
 
-const HeroSection = () => {
+import React from "react";
+
+export default function HomeHero() {
   return (
     <div className="flex items-center gap-80">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="p-12 z-10 max-w-md"
       >
-        <h1 className="text-6xl font-bold mb-4">
-          Trusted Environmental Predictions
-        </h1>
-        <p className="text-3xl">
-          Using Federated Learning & Blockchain on the Edge
-        </p>
+        <HeroText
+          title={"Trusted Environmental Predictions"}
+          subtitle={"Using Federated Learning & Blockchain on the Edge"}
+        />
       </motion.div>
       <motion.div
         className="ml-10 mb-6"
@@ -35,6 +35,4 @@ const HeroSection = () => {
       </motion.div>
     </div>
   );
-};
-
-export default HeroSection;
+}

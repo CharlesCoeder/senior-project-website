@@ -1,10 +1,10 @@
-import HeroSection from "@/components/hero-section";
 import HomeInfo from "@/components/home-info";
+import HomeHero from "@/components/home-hero";
 
 export default function Home() {
   return (
-    <div className="flex min-w-screen flex-col h-screen text-4xl ml-20 mr-20">
-      <HeroSection />
+    <div className="flex min-w-screen flex-col h-screen text-4xl">
+      <HomeHero />
       <HomeInfo />
     </div>
   );

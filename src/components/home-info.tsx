@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function HomeInfo() {
   return (
     <motion.div
-      className="flex flex-col gap-4 text-lg pl-12 max-w-[75%]"
+      className="flex flex-col gap-4 text-lg max-w-[75%]"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
