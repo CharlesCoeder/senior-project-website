@@ -74,7 +74,7 @@ export function SideNav({ items, setOpen, className }: SideNavProps) {
               </AccordionTrigger>
               <AccordionContent className="mt-2 space-y-4 pb-1">
                 {item.children?.map((child) => (
-                  <div className="pl-6" key={child.title}>
+                  <div className={`pl-${isOpen ? "6" : "0"}`} key={child.title}>
                     <Link
                       href={child.href}
                       onClick={() => {
@@ -88,14 +88,14 @@ export function SideNav({ items, setOpen, className }: SideNavProps) {
                       )}
                     >
                       <child.icon className={cn("h-5 w-5", child.color)} />
-                      <div
+                      <span
                         className={cn(
                           "absolute left-12 text-base duration-200",
                           !isOpen && className
                         )}
                       >
                         {child.title}
-                      </div>
+                      </span>
                     </Link>
                   </div>
                 ))}
