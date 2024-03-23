@@ -81,9 +81,9 @@ export const NavItems: NavItem[] = [
     color: "text-indigo-500",
   },
   {
-    title: "Blog/Updates",
+    title: "Blog & Updates",
     icon: FaBlog,
-    href: "/blog-updates",
+    href: "/blog",
     color: "text-cyan-500",
   },
   {
