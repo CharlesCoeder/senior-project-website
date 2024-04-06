@@ -8,7 +8,7 @@ import React from "react";
 
 export default function HomeHero() {
   return (
-    <div className="flex items-center gap-80">
+    <div className="flex items-center gap-[11rem]">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -20,7 +20,7 @@ export default function HomeHero() {
         />
       </motion.div>
       <motion.div
-        className="ml-10 mb-6"
+        className="mb-6"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -29,8 +29,8 @@ export default function HomeHero() {
           className="float-right"
           src="/cloud.png"
           alt="Earth"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
         />
       </motion.div>
     </div>
